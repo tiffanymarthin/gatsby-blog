@@ -5,9 +5,11 @@ require(`dotenv`).config({
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
+  pathPrefix: `/gatsby-blog`,
   siteMetadata: {
     siteTitle: `Tiffany Marthin`,
     siteTitleAlt: `TMarthin Blog`,
+    siteUrl: `https://tiffanymarthin.github.io/gatsby-blog/`
   },
   plugins: [
     {
